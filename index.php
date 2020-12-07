@@ -1,3 +1,52 @@
+<?php
+
+include("admin/config/database.php");
+$db = $conn;
+
+
+function get_title($section){
+  global $db;
+  $query = "SELECT * FROM home_content WHERE content_section='$section'" ;
+  $get_result = mysqli_query($db, $query);
+  if($get_result){
+    $get_row = mysqli_fetch_assoc($get_result);
+    return $get_row["title"];
+  }else{
+    return "Couldn't get get_title query results for ".$section;
+  }
+  
+}
+
+function get_subtitle($section){
+  global $db;
+  $query = "SELECT * FROM home_content WHERE content_section='$section'" ;
+  $get_result = mysqli_query($db, $query);
+  if($get_result){
+    $get_row = mysqli_fetch_assoc($get_result);
+    return $get_row["subtitle"];
+  }else{
+    return "Couldn't get get_title query results for ".$section;
+  }
+  
+}
+
+function get_description($section){
+  global $db;
+  $query = "SELECT * FROM home_content WHERE content_section='$section'" ;
+  $get_result = mysqli_query($db, $query);
+  if($get_result){
+    $get_row = mysqli_fetch_assoc($get_result);
+    return $get_row["description"];
+  }else{
+    return "Couldn't get get_title query results for ".$section;
+  }
+  
+}
+
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -25,7 +74,6 @@
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-    
     <div class="site-wrap" id="home-section">
 
       <div class="site-mobile-menu site-navbar-target">
@@ -44,7 +92,7 @@
         <div class="container mb-3">
           <div class="d-flex align-items-center">
             <div class="site-logo mr-auto">
-              <a href="index.html">Noxen<span class="text-primary">.</span></a>
+              <a href="index.html">VendorCrest<span class="text-primary">.</span></a>
             </div>
             <div class="site-quick-contact d-none d-lg-flex ml-auto ">
               <div class="d-flex site-info align-items-center mr-5">
@@ -69,7 +117,7 @@
 
               <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto ">
-                  <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+                  <li class="active"><a href="index.php" class="nav-link">Home</a></li>
                   <li><a href="services.html" class="nav-link">Services</a></li>
                   <li><a href="projects.html" class="nav-link">Projects</a></li>
                   <li><a href="about.html" class="nav-link">About</a></li>
@@ -95,8 +143,8 @@
         <div class="container">
           <div class="row align-items-center ">
             <div class="col-md-5 mt-5 pt-5">
-              <h1 class="mb-3">Digital Agency with Excellent Services.</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+              <h1 class="mb-3"><?php echo get_subtitle('Header'); ?></h1>
+              <p><?php echo get_description('Header'); ?></p>
               <p class="mt-5"><a href="#" class="btn btn-primary">About Us</a></p>
             </div>
             <div class="col-md-6 ml-auto">
@@ -113,8 +161,8 @@
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-md-7 mb-5">
-            <h5 class="subtitle">Features</h5>
-            <h2>A creative digital agency with excellence services</h2>
+            <h5 class="subtitle"><?php echo get_title('Services'); ?></h5>
+            <h2><?php echo get_subtitle(('Services')); ?></h2>
           </div>
         </div>
         <div class="row">
@@ -161,8 +209,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5">
-            <h2 class="h5 mb-4">Your digital partner starts here.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reprehenderit aspernatur, reiciendis explicabo doloribus aperiam sed sequi, aut repudiandae magni nobis voluptatem!</p>
+            <h2 class="h5 mb-4"><?php echo get_subtitle('Our Expertise'); ?></h2>
+            <p><?php echo get_description('Our Expertise');?></p>
 
             <div class="d-flex align-items-center">
               <span class="sign mr-4">
@@ -175,7 +223,7 @@
             </div>
           </div>
           <div class="col-md-6 ml-auto">
-            <h2 class="h5 mb-4">Our expertise and skills</h2>
+            <h2 class="h5 mb-4"><?php echo get_title('Our Expertise'); ?></h2>
 
             <div class="progress-wrap mb-4">
               <div class="d-flex">
@@ -274,8 +322,8 @@
       <div class="container">
         <div class="row justify-content-center  mb-5">
           <div class="col-md-7 text-center">
-            <h3 class="section-heading text-center">News &amp; Events</h3>
-            <p class="mb-5 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nesciunt nemo vel earum maxime neque!</p>
+            <h3 class="section-heading text-center"><?php echo get_title('News and Events');?></h3>
+            <p class="mb-5 lead"><?php get_subtitle('News and Events');?>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nesciunt nemo vel earum maxime neque!</p>
 
           </div>
 
@@ -333,8 +381,8 @@
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-7 text-center mb-5">
-            <h2 class="text-white section-heading primary-color-icon text-center">More Services</h2>
-            <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quo doloribus, suscipit libero, voluptate aliquam.</p>
+            <h2 class="text-white section-heading primary-color-icon text-center"><?php echo get_title('More Services'); ?></h2>
+            <p class="lead text-white"><?php echo get_description('More Services'); ?></p>
           </div>
         </div>
         <div class="row">
@@ -417,8 +465,8 @@
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-7 text-center mb-5">
-            <h2 class="section-heading text-center">Our Top Client Says</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
+            <h2 class="section-heading text-center"><?php echo get_title('Client Reviews'); ?></h2>
+            <p class="lead"><?php echo get_description('Client Reviews'); ?></p>
           </div>
         </div>
         <div class="row">
@@ -466,8 +514,8 @@
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-7 text-center mb-5">
-            <h2 class="text-white section-heading primary-color-icon text-center">Quality Services</h2>
-            <p class="lead text-white mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quo doloribus, suscipit libero, voluptate aliquam.</p>
+            <h2 class="text-white section-heading primary-color-icon text-center"><?php echo get_title('Contact Us'); ?></h2>
+            <p class="lead text-white mb-5"><?php echo get_description('Contact Us'); ?></p>
             <p><a href="#" class="btn btn-primary">Contact Us Now</a></p>
           </div>
         </div>
@@ -479,8 +527,8 @@
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-7 text-center mb-5">
-            <h2 class="section-heading text-center">Our Blog</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
+            <h2 class="section-heading text-center"><?php echo get_title('Our Blog'); ?></h2>
+            <p><?php echo get_description('Our Blog'); ?></p>
           </div>
         </div>
 
