@@ -51,7 +51,7 @@ function get_description($section){
 <html lang="en">
 
   <head>
-    <title>Noxen &mdash; Website Template by Colorlib</title>
+    <title>VendorCrest &mdash; Digital Maeketing agency</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -92,16 +92,16 @@ function get_description($section){
         <div class="container mb-3">
           <div class="d-flex align-items-center">
             <div class="site-logo mr-auto">
-              <a href="index.html">VendorCrest<span class="text-primary">.</span></a>
+              <a href="index.php">VendorCrest<span class="text-primary">.</span></a>
             </div>
             <div class="site-quick-contact d-none d-lg-flex ml-auto ">
               <div class="d-flex site-info align-items-center mr-5">
                 <span class="block-icon mr-3"><span class="icon-map-marker"></span></span>
-                <span>34 Street Name, City Name Here, <br> United States</span>
+                <span>Enugu, <br> Nigeria</span>
               </div>
               <div class="d-flex site-info align-items-center">
                 <span class="block-icon mr-3"><span class="icon-clock-o"></span></span>
-                <span>Sunday - Friday 8:00AM - 4:00PM <br> Saturday CLOSED</span>
+                <span>Open - 24hrs</span>
               </div>
               
             </div>
@@ -145,7 +145,7 @@ function get_description($section){
             <div class="col-md-5 mt-5 pt-5">
               <h1 class="mb-3"><?php echo get_subtitle('Header'); ?></h1>
               <p><?php echo get_description('Header'); ?></p>
-              <p class="mt-5"><a href="#" class="btn btn-primary">About Us</a></p>
+              <p class="mt-5"><a href="about.html" class="btn btn-primary">About Us</a></p>
             </div>
             <div class="col-md-6 ml-auto">
               <div class="white-dots">
@@ -217,7 +217,7 @@ function get_description($section){
                 <img src="images/signature.svg" alt="" class="img-fluid">
               </span>
               <div>
-                <span class="d-block font-weight-bold">Mr. John Doe</span>
+                <span class="d-block font-weight-bold">Oloto Mmesomma</span>
                 <span>CEO &amp; Co-Founder </span>
               </div>
             </div>
@@ -275,7 +275,7 @@ function get_description($section){
         <div class="row justify-content-center text-center">
           <div class="col-7 text-center mb-5">
             <p class="lead text-white">Suscipit libero voluptate</p>
-            <h2 class="text-white">Get ready to start your exciting journey. Our agency</h2>
+            <h2 class="text-white">Get ready to start your exciting journey. <br> Our agency is the best of its kind </h2>
           </div>
         </div>
         
@@ -617,7 +617,7 @@ function get_description($section){
                   <li><a href="#">Testimonials</a></li>
                   <li><a href="#">Terms of Service</a></li>
                   <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
                 </ul>
                 
               </div>
@@ -631,9 +631,9 @@ function get_description($section){
           <div class="col-md-12">
             <div class="border-top pt-5">
               <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+             
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="https://VendorCrest.com" target="_blank" >VendorCrest</a>
+             
             </p>
             </div>
           </div>
