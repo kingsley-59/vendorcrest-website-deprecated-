@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 17, 2020 at 09:20 PM
--- Server version: 10.1.39-MariaDB
--- PHP Version: 7.3.5
+-- Generation Time: Dec 07, 2020 at 05:15 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -35,8 +34,8 @@ CREATE TABLE `admin_profile` (
   `mobile` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `status` int(10) NOT NULL DEFAULT '0',
-  `created_at` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+  `status` int(10) NOT NULL DEFAULT 0,
+  `created_at` timestamp(6) NOT NULL DEFAULT current_timestamp(6)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -56,7 +55,7 @@ INSERT INTO `admin_profile` (`id`, `full_name`, `email`, `mobile`, `address`, `p
 
 CREATE TABLE `categories` (
   `id` int(10) NOT NULL,
-  `parent_id` int(10) DEFAULT '0',
+  `parent_id` int(10) DEFAULT 0,
   `category_name` varchar(255) NOT NULL,
   `menu_link` varchar(255) NOT NULL,
   `header_menu` int(10) NOT NULL,
@@ -99,7 +98,7 @@ CREATE TABLE `color_setting` (
 --
 
 INSERT INTO `color_setting` (`id`, `navbar_background`, `sidebar_background`, `text_color`, `save_button_color`, `edit_button_color`, `delete_button_color`, `view_button_color`, `label_text_color`) VALUES
-(1, '#0763c5', '#0f40b3', '#dad7d7', '#049a2a', '#11ac2b', '#c60c0c', '#6c6a6a', '#434242');
+(1, '#241c4a', '#231a3c', '#ffffff', '#276840', '#15a21f', '#bd0a0a', '#676565', '#000000');
 
 -- --------------------------------------------------------
 
@@ -114,7 +113,7 @@ CREATE TABLE `contacts` (
   `mobile` varchar(255) NOT NULL,
   `subject` varchar(255) NOT NULL,
   `message` text NOT NULL,
-  `created_at` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6)
+  `created_at` timestamp(6) NOT NULL DEFAULT current_timestamp(6) ON UPDATE current_timestamp(6)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -190,8 +189,8 @@ INSERT INTO `contact_form_email` (`id`, `email`) VALUES
 CREATE TABLE `home_content` (
   `id` int(10) NOT NULL,
   `content_section` varchar(255) NOT NULL,
-  `first_title` varchar(255) NOT NULL,
-  `second_title` varchar(255) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `subtitle` varchar(255) NOT NULL,
   `description` varchar(2000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -199,9 +198,15 @@ CREATE TABLE `home_content` (
 -- Dumping data for table `home_content`
 --
 
-INSERT INTO `home_content` (`id`, `content_section`, `first_title`, `second_title`, `description`) VALUES
-(2, 'About Downloader', 'sscczxc', 'adsaczxczxc', 'dsnadasnckc aksdjasdklj asdljdls asldjsdl '),
-(3, 'How to Download', 'dsds', 'dsds', '					\r\ndsds');
+INSERT INTO `home_content` (`id`, `content_section`, `title`, `subtitle`, `description`) VALUES
+(6, 'Header', 'Welcome', 'Digital Agency With Excellent Services.', '					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.					'),
+(8, 'Services', 'Features', 'A creative digital agency with excellence services', ''),
+(9, 'Our Expertise', 'Our expertise and skills', 'Your digital partner starts here.', '					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reprehenderit aspernatur, reiciendis explicabo doloribus aperiam sed sequi, aut repudiandae magni nobis voluptatem!													'),
+(10, 'News and Events', 'News & Events', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nesciunt nemo vel earum maxime neque!									'),
+(11, 'More Services', 'More Services', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quo doloribus, suscipit libero, voluptate aliquam.									'),
+(12, 'Client Reviews', 'Our Top Client Says', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!									'),
+(13, 'Contact Us', 'Get in touch', '', '					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quo doloribus, suscipit libero, voluptate aliquam.													'),
+(14, 'Our Blog', 'Our Blog', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!									');
 
 -- --------------------------------------------------------
 
@@ -230,7 +235,7 @@ CREATE TABLE `theme_setting` (
 --
 
 INSERT INTO `theme_setting` (`id`, `header_background`, `footer_background`, `downloader_box_background`, `downloader_box_button`, `first_title`, `second_title`, `third_title`, `footer_menu_link`, `header_menu_link`, `icon`, `paragraph`, `logo_name`) VALUES
-(1, '#0a570d', '#c2c52b', '#a61c1c', '#8a7575', '#d53030', '#4d1f1f', '#1917a6', '#75c5c7', '#6ff316', '#4f24eb', '#ff0000', '#f50000');
+(1, '#0a570d', '#c2c52b', '#a61c1c', '#8a7575', '#d53030', '#4d1f1f', '#1917a6', '#75c5c7', '#6ff316', '#ff8040', '#ff0000', '#f50000');
 
 -- --------------------------------------------------------
 
@@ -242,7 +247,7 @@ CREATE TABLE `website_setting` (
   `id` int(10) NOT NULL,
   `website_title` varchar(255) NOT NULL,
   `website_name` varchar(255) NOT NULL,
-  `visible_website_name` int(10) NOT NULL DEFAULT '0',
+  `visible_website_name` int(10) NOT NULL DEFAULT 0,
   `website_logo` varchar(255) NOT NULL,
   `website_favicon` varchar(255) NOT NULL,
   `meta_keyword` varchar(255) NOT NULL,
@@ -360,7 +365,7 @@ ALTER TABLE `contact_details`
 -- AUTO_INCREMENT for table `contact_email`
 --
 ALTER TABLE `contact_email`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `contact_form_email`
@@ -372,7 +377,7 @@ ALTER TABLE `contact_form_email`
 -- AUTO_INCREMENT for table `home_content`
 --
 ALTER TABLE `home_content`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `theme_setting`
