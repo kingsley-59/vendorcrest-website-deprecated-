@@ -165,10 +165,13 @@ function get_description($section){
 	                    <div class="icon"><span class="ion-ios-arrow-down bg-primary"></span></div>
 	                    <select name="" id="" class="form-control">
 	                    	<option value="">Select Service</option>
-	                      <option value="">Finance</option>
-	                      <option value="">Business</option>
-	                      <option value="">Auto Loan</option>
-	                      <option value="">Real Estate</option>
+	                      <option value="">Mobile App Development</option>
+	                      <option value="">Branding </option>
+                        <option value="">Flier Design</option>
+                        <option value="">Product Design</option>
+                        <option value="">Web app Development</option>
+                        <option value="">Website Development</option>
+                        <option value="">Digital Marketing</option>
 	                      <option value="">Other Services</option>
 	                    </select>
 	                  </div>
