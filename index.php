@@ -149,7 +149,42 @@ function get_description($section){
             </div>
             <div class="col-md-6 ml-auto">
               <div class="white-dots">
-                <img src="images/img_2.jpg" alt="" class="img-fluid">
+                <!-- <img src="images/img_2.jpg" alt="" class="img-fluid"> -->
+                <div class="ftco-animate bg-primary align-self-stretch px-4 py-3 w-100">
+							<h2 class="heading-white mb-4"> Service Application</h2>
+							<form action="#" class="appointment-form ftco-animate">
+		    				<div class="form-group">
+		    					<input type="text" class="form-control" placeholder="First Name">
+		    				</div>
+		    				<div class="form-group">
+		    					<input type="text" class="form-control" placeholder="Last Name">
+		    				</div>
+	    					<div class="form-group">
+		    					<div class="form-field">
+	        					<div class="select-wrap">
+	                    <div class="icon"><span class="ion-ios-arrow-down bg-primary"></span></div>
+	                    <select name="" id="" class="form-control">
+	                    	<option value="">Select Service</option>
+	                      <option value="">Finance</option>
+	                      <option value="">Business</option>
+	                      <option value="">Auto Loan</option>
+	                      <option value="">Real Estate</option>
+	                      <option value="">Other Services</option>
+	                    </select>
+	                  </div>
+		              </div>
+		    				</div>
+	    					<div class="form-group">
+		    					<input type="text" class="form-control" placeholder="Phone">
+		    				</div>
+	    					<div class="form-group">
+		              <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
+		            </div>
+		            <div class="form-group">
+		              <input type="submit" value="Request A Quote" class="btn btn-secondary py-3 px-4">
+		            </div>
+		    			</form>
+						</div>
               </div>
             </div>
           </div>

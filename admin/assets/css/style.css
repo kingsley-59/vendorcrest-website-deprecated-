@@ -81,7 +81,7 @@ position: fixed;
     display: none;
 }
 #confirmBox p{
-color: #dc3545;
+color: #00adbf;
     font-size: 20px;
     position: relative;
     top: 15px
@@ -90,7 +90,7 @@ color: #dc3545;
 border: 0px;
     margin: 30px;
     padding: 2px 30px;
-    background: #dc3545;
+    background: #00adbf;
     color: white;
 }
  #hide i{
@@ -113,7 +113,7 @@ border: 0px;
   }
   label::after{
     color: #ffffff !important;
-    background-color: #dc3545 !important;
+    background-color: #00adbf !important;
   }
   .accordion-content .description {
    
