@@ -2,7 +2,7 @@
 $hostname     = "localhost"; // Enter Your Host Name
 $username     = "vendorcr_kingsley";      // Enter Your Table username
 $password     = "kingsley-59";          // Enter Your Table Password
-$databasename = "admin_panel"; // Enter Your database Name
+$databasename = "vendorcr_admin_panel"; // Enter Your database Name
 
 
 $conn = new mysqli($hostname, $username, $password, $databasename);
