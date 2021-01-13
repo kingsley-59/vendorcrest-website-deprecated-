@@ -1,6 +1,6 @@
 <?php
 $hostname     = "localhost"; // Enter Your Host Name
-$username     = "root";      // Enter Your Table username
+$username     = "vendorcr_kingsley";      // Enter Your Table username
 $password     = "";          // Enter Your Table Password
 $databasename = "admin_panel"; // Enter Your database Name
 
