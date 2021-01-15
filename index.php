@@ -51,7 +51,7 @@ function get_description($section){
 <html lang="en">
 
   <head>
-    <title>VendorCrest &mdash; Digital Maeketing agency</title>
+    <title>VendorCrest &mdash; Digital Marketing agency</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -151,41 +151,47 @@ function get_description($section){
               <div class="white-dots">
                 <!-- <img src="images/img_2.jpg" alt="" class="img-fluid"> -->
                 <div class="ftco-animate bg-primary align-self-stretch px-4 py-3 w-100">
-							<h2 class="heading-white mb-4"> Service Application</h2>
-							<form action="#" class="appointment-form ftco-animate">
+              <h2 class="heading-white mb-4"> Service Application</h2>
+              <span><small>*all fields are required.</small></span>
+							<form action="#" id="get_quote" class="appointment-form ftco-animate">
 		    				<div class="form-group">
-		    					<input type="text" class="form-control" placeholder="First Name">
+		    					<input type="text" class="form-control" placeholder="First Name" id="f_name" required>
 		    				</div>
 		    				<div class="form-group">
-		    					<input type="text" class="form-control" placeholder="Last Name">
+		    					<input type="text" class="form-control" placeholder="Last Name" id="l_name" required>
+                </div>
+                <div class="form-group">
+		    					<input type="email" class="form-control" placeholder="Email address" id="email_address" required>
 		    				</div>
 	    					<div class="form-group">
 		    					<div class="form-field">
 	        					<div class="select-wrap">
 	                    <div class="icon"><span class="ion-ios-arrow-down bg-primary"></span></div>
-	                    <select name="" id="" class="form-control">
+	                    <select name="" id="service" class="form-control" required>
 	                    	<option value="">Select Service</option>
-	                      <option value="">Mobile App Development</option>
-	                      <option value="">Branding </option>
-                        <option value="">Flier Design</option>
-                        <option value="">Product Design</option>
-                        <option value="">Web app Development</option>
-                        <option value="">Website Development</option>
-                        <option value="">Digital Marketing</option>
-	                      <option value="">Other Services</option>
+	                      <option value="Mobile App Development">Mobile App Development</option>
+	                      <option value="Branding">Branding </option>
+                        <option value="Flier Design">Flier Design</option>
+                        <option value="Product Design">Product Design</option>
+                        <option value="Web app Development">Web app Development</option>
+                        <option value="Website Development">Website Development</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+	                      <option value="Other Services">Other Services</option>
 	                    </select>
 	                  </div>
 		              </div>
 		    				</div>
 	    					<div class="form-group">
-		    					<input type="text" class="form-control" placeholder="Phone">
+		    					<input type="text" id="tel_no" class="form-control" placeholder="Phone" required>
 		    				</div>
 	    					<div class="form-group">
-		              <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
+		              <textarea name="" id="message" cols="30" rows="2" class="form-control" placeholder="Message" required></textarea>
 		            </div>
 		            <div class="form-group">
-		              <input type="submit" value="Request A Quote" class="btn btn-secondary py-3 px-4">
-		            </div>
+                  <input type="submit" value="Request A Quote" class="btn btn-secondary py-3 px-4">
+                  <div id="form_response"></div>
+                </div>
+                </div>
 		    			</form>
 						</div>
               </div>

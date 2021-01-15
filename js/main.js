@@ -88,6 +88,33 @@ jQuery(document).ready(function($) {
 	}; 
 	siteMenuClone();
 
+	var submitform = function () {
+		$("form#get_quote").submit((event) => {
+			event.preventDefault(event);
+			var first_name = $("input#f_name").val();
+			var last_name = $("input#l_name").val();
+			var email_address = $("input#email_address").val();
+			var service = $("#service").val();
+			var phone_no = $("input#tel_no").val();
+			var message = $("textarea#message").val();
+			var url = "admin/scripts/get_quote.php";
+			$.post(url, {
+				first_name: first_name,
+				last_name: last_name,
+				email_address: email_address,
+				service: service,
+				phone_no: phone_no,
+				message: message
+			}, (response, status) => {
+					if (status == "success") {
+						//alert(response);
+						$("#form_response").html(response);
+					}
+			})
+		});
+	};
+	submitform();
+			
 
 	var sitePlusMinus = function() {
 		$('.js-btn-minus').on('click', function(e){
