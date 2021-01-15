@@ -9,7 +9,6 @@ $databasename = "vendorcr_admin_panel"; // Enter Your database Name
 // $password     = "";          // Enter Your Table Password
 // $databasename = "admin_panel"; // Enter Your database Name
 
-
 $conn = new mysqli($hostname, $username, $password, $databasename);
 
 // Check connection
