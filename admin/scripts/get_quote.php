@@ -1,6 +1,7 @@
 <?php
 
 $error = 0;
+$db_errors = array();
 
 if(empty(isset($_POST["first_name"])) ||
 empty(isset($_POST["last_name"])) ||
@@ -35,33 +36,49 @@ if ($error == 0){
   $insert_sql = "INSERT INTO quote_requests (firstname, lastname, email, phone, service, description, time, status) VALUES ('$firstname', '$lastname', '$email_address', '$tel', '$service', '$message', CURRENT_TIMESTAMP(), '$status')";
   $result = $conn->query($insert_sql);
   if($result){
-    send_email($email_address);
-    echo "<span class=\"success\" style=\"color: green;\">Message sent successfully!</span><br>";
+    $mail_subject = "Your Quote Details - VendorCrest.";
+    send_email($mail_subject);
+
+    if (send_email($mail_subject)){
+      echo "<span class=\"success\" style=\"color: green;\">Message sent successfully!</span><br>";
+    }else{
+      echo "<span class=\"error\" style=\"color: red;\">Message not sent!</span>";
+    }
+    
   }else{
-    //echo "<span class=\"error\" style=\"color: red;\">Message not sent!</span>";
-    echo "Error: ". $conn->error;
+    $e = "Quote insert error: ". $conn->error;
+    array_push($db_errors, $e);
   }
 
 }
 
-function send_email($email){
+function send_email($mailSubj){
   global $message;
   global $email_address;
-  include "../config/database.php";
-  $update_sql = "UPDATE quote_requests SET status=true where email='$email' ";
-  $result = mysqli_query($conn, $update_sql);
-  if($result){
-    $to = $email_address;
-    $subject = "";
-    $msg = $message;
-    $headers = "From: webmaster@example.com"."\r\n";
-    $headers .= "Cc: myboss@example.com"."\r\n";
 
-    mail($to, $subject, $msg, $headers);
+  ini_set('SMTP','sbg103.truehost.cloud');
+  ini_set('smtp_port',465);
+  $to = $email_address;
+  $subject = $mailSubj;
+  $msg = $message;
+  $headers = "From: hello@vendorcrest.com"."\r\n";
+  $headers .= "Cc: divine10646@gmail.com"."\r\n";
+
+  $send = mail($to, $subject, $msg, $headers);
+  if ($send){
     return true;
+    include "../config/database.php";
+    $update_sql = "UPDATE quote_requests SET status=true where email='$email_address' ";
+    $result = mysqli_query($conn, $update_sql);
+    if(!$result){
+      $e = "Status update error: ". $conn->error;
+      array_push($db_errors, $e);
+    }
   }else{
     return false;
   }
+  
+  
 }
 
 //Use PhpMailer. Configure and set up.
