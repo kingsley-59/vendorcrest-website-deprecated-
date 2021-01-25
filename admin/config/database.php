@@ -1,13 +1,13 @@
 <?php
 $hostname     = "localhost"; // Enter Your Host Name
 
-// $username     = "vendorcr_kingsley";      // Enter Your Table username
-// $password     = "kingsley-59";          // Enter Your Table Password
-// $databasename = "vendorcr_admin_panel"; // Enter Your database Name
+$username     = "vendorcr_kingsley";      // Enter Your Table username
+$password     = "kingsley-59";          // Enter Your Table Password
+$databasename = "vendorcr_admin_panel"; // Enter Your database Name
 
-$username     = "root";      // Enter Your Table username
-$password     = "";          // Enter Your Table Password
-$databasename = "admin_panel"; // Enter Your database Name
+// $username     = "root";      // Enter Your Table username
+// $password     = "";          // Enter Your Table Password
+// $databasename = "admin_panel"; // Enter Your database Name
 
 $conn = new mysqli($hostname, $username, $password, $databasename);
 
