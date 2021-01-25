@@ -48,10 +48,22 @@ try {
 
     $mail->send();
     echo 'Message has been sent';
+    return true;
     $mail->smtpClose();
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    return false;
 }
-
+// $arr = "nothing";
+// function addnum(){
+//     global $arr;
+//     $b = "ball";
+//     $arr = $b;
+//     return false;
+// }
+// addnum();
+// if (!addnum()){
+//     echo $arr;
+// }
 
 ?>
