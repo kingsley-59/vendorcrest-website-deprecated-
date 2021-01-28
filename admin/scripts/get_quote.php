@@ -118,7 +118,7 @@ function sendMail(){
     $mail->AltBody = $altMessage;
 
     $mail->send();
-    $mail->smtpClose();
+    //$mail->smtpClose();
     return true;
   } catch (Exception $e) {
     $sendMailError =  "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
