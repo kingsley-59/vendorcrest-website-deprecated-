@@ -85,14 +85,14 @@ function get_description($section){
         <div class="site-mobile-menu-body"></div>
       </div>
 
-
+      <!-- header start -->
 
       <header class="site-navbar site-navbar-target" role="banner">
 
         <div class="container mb-3">
           <div class="d-flex align-items-center">
             <div class="site-logo mr-auto">
-              <a href="index.php">VendorCrest<span class="text-primary">.</span></a>
+              <a href="index.php"> <img src="images/vc-logo.png" alt="logo" width="48" height="48"> VendorCrest<span class="text-primary">.</span></a>
             </div>
             <div class="site-quick-contact d-none d-lg-flex ml-auto ">
               <div class="d-flex site-info align-items-center mr-5">
@@ -118,11 +118,11 @@ function get_description($section){
               <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto ">
                   <li class="active"><a href="index.php" class="nav-link">Home</a></li>
-                  <li><a href="services.html" class="nav-link">Services</a></li>
-                  <li><a href="projects.html" class="nav-link">Projects</a></li>
-                  <li><a href="about.html" class="nav-link">About</a></li>
-                  <li><a href="blog.html" class="nav-link">Blog</a></li>
-                  <li><a href="contact.html" class="nav-link">Contact</a></li>
+                  <li><a href="#" class="nav-link">Services</a></li>
+                  <!-- <li><a href="projects.html" class="nav-link">Projects</a></li> -->
+                  <li><a href="#" class="nav-link">About</a></li>
+                  <li><a href="#" class="nav-link">Blog</a></li>
+                  <li><a href="#" class="nav-link">Contact</a></li>
                 </ul>
               </nav>
 
@@ -138,15 +138,19 @@ function get_description($section){
 
       </header>
 
+      <!-- header end -->
+
     <div class="ftco-blocks-cover-1">
       <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')">
         <div class="container">
           <div class="row align-items-center ">
             <div class="col-md-5 mt-5 pt-5">
-              <h1 class="mb-3"><?php echo get_subtitle('Header'); ?></h1>
-              <p><?php echo get_description('Header'); ?></p>
+              <h1 class="mb-3"><?php //echo get_subtitle('Header'); ?>Digital Agency With Excellent Services.</h1>
+              <p><?php //echo get_description('Header'); ?>Our team is made up of young, creative, highly skilled, devoted and talented professionals that have high interest in making that brifght idea, product, or service grow but also making sure you have the best customer experience as wwell as creating a relationship that stands the test of time.</p>
               <p class="mt-5"><a href="about.html" class="btn btn-primary">About Us</a></p>
             </div>
+
+            <!-- form start -->
             <div class="col-md-6 ml-auto">
               <div class="white-dots">
                 <!-- <img src="images/img_2.jpg" alt="" class="img-fluid"> -->
@@ -169,12 +173,12 @@ function get_description($section){
 	                    <div class="icon"><span class="ion-ios-arrow-down bg-primary"></span></div>
 	                    <select name="" id="service" class="form-control" required>
 	                    	<option value="">Select Service</option>
-	                      <option value="Mobile App Development">Mobile App Development</option>
-	                      <option value="Branding">Branding </option>
-                        <option value="Flier Design">Flier Design</option>
-                        <option value="Product Design">Product Design</option>
-                        <option value="Web app Development">Web app Development</option>
-                        <option value="Website Development">Website Development</option>
+	                      <option value="Mobile App Development">Web Development</option>
+	                      <option value="Branding">Graphics Design</option>
+                        <option value="Flier Design">Search Engine Marketing</option>
+                        <option value="Product Design">Mobile App Creation</option>
+                        <option value="Web app Development">Content Development</option>
+                        <option value="Website Development">Social Media Marketing</option>
                         <option value="Digital Marketing">Digital Marketing</option>
 	                      <option value="Other Services">Other Services</option>
 	                    </select>
@@ -195,6 +199,7 @@ function get_description($section){
 		    			</form>
 						</div>
               </div>
+              <!-- form end -->
             </div>
           </div>
         </div>
@@ -215,8 +220,8 @@ function get_description($section){
               <span class="wrap-icon">
                 <span class="icon-home"></span>
               </span>
-              <h3>Recusandae Cumque</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
+              <h3>Creative Ads</h3>
+              <p>We help you prepare and organize creative ads finely suited for your target audience through our SEO, Graphics design and Content Creation.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
@@ -224,8 +229,8 @@ function get_description($section){
               <span class="wrap-icon">
                 <span class="icon-face"></span>
               </span>
-              <h3>Voluptas Ullam</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
+              <h3>Business Growth</h3>
+              <p>With our Social Media Marketing, Web Development and the creative ads skills, we work with you to facilitate a speedy growth in your business and brand influence.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
@@ -233,8 +238,8 @@ function get_description($section){
               <span class="wrap-icon">
                 <span class="icon-drafts"></span>
               </span>
-              <h3>Reiciendis Dolorum Minu</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
+              <h3>Business Plan</h3>
+              <p>Based on our expertise in digital marketing, we also plan precise digital marketing strategies to facilitate increased turnover and increased customer engagement.</p>
             </div>
           </div>
         </div>
@@ -249,7 +254,7 @@ function get_description($section){
 
 
 
-    <div class="site-section bg-light">
+    <!-- <div class="site-section bg-light">
       <div class="container">
         <div class="row">
           <div class="col-md-5">
@@ -312,9 +317,9 @@ function get_description($section){
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="site-section section-3" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_2.jpg');">
+    <!-- <div class="site-section section-3" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_2.jpg');">
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-7 text-center mb-5">
@@ -324,9 +329,9 @@ function get_description($section){
         </div>
         
       </div>
-    </div>
+    </div> -->
 
-    <div class="site-section counter-wrap">
+    <!-- <div class="site-section counter-wrap">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-5">
@@ -358,11 +363,11 @@ function get_description($section){
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
 
-    <div class="site-section bg-light">
+    <!-- <div class="site-section bg-light">
       <div class="container">
         <div class="row justify-content-center  mb-5">
           <div class="col-md-7 text-center">
@@ -416,7 +421,7 @@ function get_description($section){
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
     
@@ -425,64 +430,30 @@ function get_description($section){
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-7 text-center mb-5">
-            <h2 class="text-white section-heading primary-color-icon text-center"><?php echo get_title('More Services'); ?></h2>
-            <p class="lead text-white"><?php echo get_description('More Services'); ?></p>
+            <h2 class="text-white section-heading primary-color-icon text-center">More Services<?php //echo get_title('More Services'); ?></h2>
+            <p class="lead text-white">Our services are designed and carefully selected to meet your business marketing needs with the sole aim of increasing turnover and brand awareness.<?php //echo get_description('More Services'); ?></p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="service-1">
               <span class="service-1-icon">
-                <span class="icon-attach_money"></span>
+                <span class="icon-phonelink"></span>
               </span>
               <div class="service-1-contents">
-                <h3>Consectetur Adipisicing Elit</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                <h3>Web Development</h3>
+                <p>Our team of designers and developers are ever ready to give your brand a voice on the web.</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="service-1">
-              <span class="service-1-icon">
-                <span class="icon-build"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Obcaecati Laboriosam</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="service-1">
-              <span class="service-1-icon">
-                <span class="icon-photo_camera"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Nostrum Suscipit Nobis</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="service-1">
               <span class="service-1-icon">
                 <span class="icon-redeem"></span>
               </span>
               <div class="service-1-contents">
-                <h3>Harum Molestiae Optio</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="service-1">
-              <span class="service-1-icon">
-                <span class="icon-phonelink"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Nostrum Suscipit Nobis</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                <h3>Graphics Design</h3>
+                <p>Let your business leave a mark in the minds of potential customers through impressive branding and design.</p>
               </div>
             </div>
           </div>
@@ -492,8 +463,42 @@ function get_description($section){
                 <span class="icon-child_friendly"></span>
               </span>
               <div class="service-1-contents">
-                <h3>Eaque Odit Molestias</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                <h3>Search Engine Marketing</h3>
+                <p>Optimize search engine marketing by using the most suited keywords for your business.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-1">
+              <span class="service-1-icon">
+                <span class="icon-attach_money"></span>
+              </span>
+              <div class="service-1-contents">
+                <h3>Mobile App Creation</h3>
+                <p>We have all it takes to help you offer the best services to your customers through mobile apps</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-1">
+              <span class="service-1-icon">
+                <span class="icon-build"></span>
+              </span>
+              <div class="service-1-contents">
+                <h3>Content Development</h3>
+                <p>Keep your customers enchanted with impressive content in all aspects of customer interaction</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-1">
+              <span class="service-1-icon">
+                <span class="icon-photo_camera"></span>
+              </span>
+              <div class="service-1-contents">
+                <h3>Social Media Marketing</h3>
+                <p>Make your brand a household name with extensive publicity through various socal media marketing strategies.</p>
               </div>
             </div>
           </div>
@@ -567,7 +572,7 @@ function get_description($section){
     </div>
 
 
-    <div class="site-section bg-white">
+    <!-- <div class="site-section bg-white">
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-7 text-center mb-5">
@@ -622,7 +627,7 @@ function get_description($section){
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
     
@@ -634,11 +639,15 @@ function get_description($section){
         <div class="row">
           <div class="col-lg-4">
             <h2 class="footer-heading mb-3">About Us</h2>
-                <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                <p class="mb-5">Are you an SME, Entrepreneur or Business Owner? <span style="color: #00adbf;">VendorCrest</span> is here for you! </p>
 
                 <h2 class="footer-heading mb-4">Newsletter</h2>
-                <form action="#" class="d-flex" class="subscribe">
-                  <input type="text" class="form-control mr-3" placeholder="Email">
+                <div id="resp_div">
+                  <div class="alert" id="res_alert"></div>
+                </div>
+                <form action="" id="newsletter_sub" class="d-flex" class="subscribe">
+                  <input type="text" id="nl_firstname" class="form-control mr-3" placeholder="firstname" required>
+                  <input type="email" id="nl_email" class="form-control mr-3" placeholder="Email" required>
                   <input type="submit" value="Send" class="btn btn-primary">
                 </form>
           </div>

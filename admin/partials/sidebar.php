@@ -46,6 +46,9 @@
   <li class="nav-item">
       <a class="nav-link content-link" href="dashboard.php?cat=website-content&subcat=home-content">Home Content</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link content-link" href="dashboard.php?cat=website-content&subcat=blog-content">Blog</a>
+    </li>
     
 </ul>
 </li>

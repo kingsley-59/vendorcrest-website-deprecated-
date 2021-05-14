@@ -44,7 +44,7 @@ $(document).on('submit','#adminForm',function(e){
        },
         success: function(data){
        
-        $('#adminForm').find('input').val('')
+        $('#adminForm').find('input').val('');
         $('#adminForm').find('textarea').val('');
         $('button[type="submit"]').removeAttr('disabled').text('Save');
        
@@ -184,3 +184,32 @@ var getUrlParameter = function getUrlParameter(sParam) {
         }
     }
 };
+
+
+// //==========save blog post========//
+// $(document).on('submit', 'input#edit-blog', function (e) {
+//   e.preventDefault();
+//   var blog_title, blog_date, blog_author, blog_writeup, url;
+//   blog_title = $("#blog-title").val();
+//   blog_date = $("#blog-date").val();
+//   blog_author = $("#blog-author").val();
+//   blog_writeup = $("#blog-writeup").val();
+//   url = "blog/editblog.php";
+//   //console.log(blog_date);
+
+//   $.post(url, {
+//     blogTitle: blog_title,
+//     blogDate: blog_date,
+//     blogAuthor: blog_author,
+//     blogWriteup: blog_writeup
+//   }, (response, status) => {
+//       if (status == "success") {
+//         //$("form#edit-blog").reset();
+//         document.getElementById("edit-blog").reset();
+//         alert(response);
+//       } else {
+//         alert("An error occurred; please resubmit form!");
+//       }
+//   });
+  
+// });

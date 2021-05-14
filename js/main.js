@@ -114,7 +114,44 @@ jQuery(document).ready(function($) {
 		});
 	};
 	submitform();
-			
+	
+	var submitnewsletter = function () {
+		$("form#newsletter_sub").submit((event) => {
+			event.preventDefault(event);
+			var email = $("input#nl_email").val();
+			var firstname = $("input#nl_firstname").val();
+			var url = "admin/scripts/newsletter.php";
+			$.post(url, {
+				first_name: firstname,
+				newsletter_email: email,
+				auth_code: "4498a29GqUI41zBk0764"
+			}, (response, status) => {
+				if (status == "success") {
+					var div = document.createElement("div");
+					var att = document.createAttribute("id");
+					att.value = "res_alert";
+					div.setAttributeNode(att);
+					//$("div#res_alert").addClass("alert");
+					$("div#resp_div").html(div);
+					var close_btn = "<a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>";
+					$("form#newsletter_sub input[type!='submit']").val("");
+					if (response.includes("Success!")) {
+						$("div#res_alert").removeClass("alert-danger");
+						$("div#res_alert").addClass("alert alert-success alert-dismissible");
+						$("div#res_alert").html(close_btn + response);
+					} else if (response.includes("Error!")) {
+						$("div#res_alert").removeClass("alert-success");
+						$("div#res_alert").addClass("alert alert-danger alert-dismissible");
+						$("div#res_alert").html(close_btn + response);
+					} else {
+						$("div#res_alert").addClass("alert alert-info alert-dismissible");
+						$("div#res_alert").html(close_btn + response);
+					}
+				}
+			})
+		});
+	};
+	submitnewsletter();
 
 	var sitePlusMinus = function() {
 		$('.js-btn-minus').on('click', function(e){

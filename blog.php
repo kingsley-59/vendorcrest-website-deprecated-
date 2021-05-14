@@ -1,3 +1,11 @@
+<?php
+
+include "admin/config/database.php";
+
+?>
+
+
+
 <!doctype html>
 <html lang="en">
 
@@ -71,7 +79,7 @@
                 <ul class="site-menu main-menu js-clone-nav mr-auto ">
                   <li><a href="index.php" class="nav-link">Home</a></li>
                   <li><a href="services.html" class="nav-link">Services</a></li>
-                  <li><a href="projects.html" class="nav-link">Projects</a></li>
+                  <!-- <li><a href="projects.html" class="nav-link">Projects</a></li> -->
                   <li><a href="about.html" class="nav-link">About</a></li>
                   <li class="active"><a href="blog.html" class="nav-link">Blog</a></li>
                   <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -117,6 +125,8 @@
         </div>
 
         <div class="row">
+          <?php $i = 1; ?>
+          <?php while($i <= 6): ?>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
               <a href="single.html">
@@ -131,6 +141,8 @@
               </div>
             </div>
           </div>
+          <?php $i++; ?>
+          <?php endwhile; ?>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
               <a href="single.html">
