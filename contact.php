@@ -67,21 +67,22 @@
 
               
 
-              <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
+            <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto ">
                   <li><a href="index.php" class="nav-link">Home</a></li>
-                  <li class="active"><a href="services.html" class="nav-link">Services</a></li>
+                  <li><a href="services.php" class="nav-link">Services</a></li>
                   <!-- <li><a href="projects.html" class="nav-link">Projects</a></li> -->
-                  <li><a href="about.html" class="nav-link">About</a></li>
-                  <li><a href="blog.html" class="nav-link">Blog</a></li>
-                  <li><a href="contact.html" class="nav-link">Contact</a></li>
+                  <li class="active"><a href="about.php" class="nav-link">About</a></li>
+                  <li><a href="blog.php" class="nav-link">Blog</a></li>
+                  <li><a href="contact.php" class="nav-link">Contact</a></li>
                 </ul>
               </nav>
 
               <div class="top-social ml-auto">
-                <a href="#"><span class="icon-facebook"></span></a>
-                <a href="#"><span class="icon-twitter"></span></a>
-                <a href="#"><span class="icon-linkedin"></span></a>
+                <a href="https://instagram.com/vendorcrest_digital"><span class="icon-instagram"></span></a>
+                <a href="https://facebook.com/vendorcrest1"><span class="icon-facebook"></span></a>
+                <a href="https://twitter.com/vendorcrest"><span class="icon-twitter"></span></a>
+                <a href="https://linkedin.com/in/vendorcrest-digital-148583210"><span class="icon-linkedin"></span></a>
               </div>
           </div>
         </div>
@@ -97,9 +98,8 @@
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-5 mt-5 pt-5">
-              <h1 class="mb-3">Our Services</h1>
+              <h1 class="mb-3">Contact Us</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
-              <p><a href="#" class="btn btn-primary">Learn More</a></p>
             </div>
           </div>
         </div>
@@ -107,73 +107,57 @@
     </div>
 
 
-    <div class="site-section">
+    <div class="site-section bg-light" id="contact-section">
       <div class="container">
         <div class="row justify-content-center text-center">
-          <div class="col-md-7 mb-5">
-            <h5 class="subtitle">Features</h5>
-            <h2>A creative digital agency with excellence services</h2>
-          </div>
+        <div class="col-7 text-center mb-5">
+          <h2>Get In Touch Using The Contact Form</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
         </div>
+      </div>
         <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="feature-1">
-              <span class="wrap-icon">
-                <span class="icon-home"></span>
-              </span>
-              <h3>Recusandae Cumque</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="feature-1">
-              <span class="wrap-icon">
-                <span class="icon-face"></span>
-              </span>
-              <h3>Voluptas Ullam</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="feature-1">
-              <span class="wrap-icon">
-                <span class="icon-drafts"></span>
-              </span>
-              <h3>Reiciendis Dolorum Minu</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
-            </div>
-          </div>
+          <div class="col-lg-8 mb-5" >
+            <form action="#" method="post">
+              <div class="form-group row">
+                <div class="col-md-6 mb-4 mb-lg-0">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+              </div>
 
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="feature-1">
-              <span class="wrap-icon">
-                <span class="icon-home"></span>
-              </span>
-              <h3>Recusandae Cumque</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="feature-1">
-              <span class="wrap-icon">
-                <span class="icon-face"></span>
-              </span>
-              <h3>Voluptas Ullam</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="feature-1">
-              <span class="wrap-icon">
-                <span class="icon-drafts"></span>
-              </span>
-              <h3>Reiciendis Dolorum Minu</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
-            </div>
-          </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Email address">
+                </div>
+              </div>
 
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30" rows="10"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6 mr-auto">
+                  <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Send Message">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-4 ml-auto">
+            <div class="bg-white p-3 p-md-5">
+              <h3 class="text-black mb-4">Contact Info</h3>
+              <ul class="list-unstyled footer-link">
+                <li class="d-block mb-3">
+                  <span class="d-block text-black">Address:</span>
+                  <span>Enugu, Nigeria</span></li>
+                <li class="d-block mb-3"><span class="d-block text-black">Phone:</span><span>+1 242 4942 290</span></li>
+                <li class="d-block mb-3"><span class="d-block text-black">Email:</span><span>info@yourdomain.com</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        
       </div>
     </div>
 
@@ -193,23 +177,24 @@
           <div class="col-lg-8 ml-auto">
             <div class="row">
               <div class="col-lg-4 ml-auto">
-                <h2 class="footer-heading mb-4">Navigation</h2>
+                <h2 class="footer-heading mb-4">Social Media: </h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="https://instagram.com/vendorcrest_digital"><span class="icon-instagram"></span>  Instagram</a></li>
+                  <li><a href="https://facebook.com/vendorcrest1"><span class="icon-facebook"></span>  Facebook</a></li>
+                  <li><a href="https://twitter.com/vendorcrest"><span class="icon-twitter"></span>  Twitter</a></li>
+                  <li><a href="https://linkedin.com/in/vendorcrest-digital-148583210"><span class="icon-linkedin"></span>  LinkedIn</a></li>
+                  <li><a href="https://wa.me/+2348112347977?text=**from%20vendorcrest.com"><span class="icon-whatsapp"></span>  Whatsapp</a></li>
                 </ul>
               </div>
               <div class="col-lg-4">
                 <h2 class="footer-heading mb-4">Navigation</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="index.php">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
                   <li><a href="#">Terms of Service</a></li>
                   <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
                 </ul>
                 
               </div>

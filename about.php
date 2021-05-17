@@ -70,18 +70,19 @@
               <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto ">
                   <li><a href="index.php" class="nav-link">Home</a></li>
-                  <li><a href="services.html" class="nav-link">Services</a></li>
+                  <li><a href="services.php" class="nav-link">Services</a></li>
                   <!-- <li><a href="projects.html" class="nav-link">Projects</a></li> -->
-                  <li class="active"><a href="about.html" class="nav-link">About</a></li>
-                  <li><a href="blog.html" class="nav-link">Blog</a></li>
-                  <li><a href="contact.html" class="nav-link">Contact</a></li>
+                  <li class="active"><a href="about.php" class="nav-link">About</a></li>
+                  <li><a href="blog.php" class="nav-link">Blog</a></li>
+                  <li><a href="contact.php" class="nav-link">Contact</a></li>
                 </ul>
               </nav>
 
               <div class="top-social ml-auto">
-                <a href="#"><span class="icon-facebook"></span></a>
-                <a href="#"><span class="icon-twitter"></span></a>
-                <a href="#"><span class="icon-linkedin"></span></a>
+                <a href="https://instagram.com/vendorcrest_digital"><span class="icon-instagram"></span></a>
+                <a href="https://facebook.com/vendorcrest1"><span class="icon-facebook"></span></a>
+                <a href="https://twitter.com/vendorcrest"><span class="icon-twitter"></span></a>
+                <a href="https://linkedin.com/in/vendorcrest-digital-148583210"><span class="icon-linkedin"></span></a>
               </div>
           </div>
         </div>
@@ -334,23 +335,24 @@
           <div class="col-lg-8 ml-auto">
             <div class="row">
               <div class="col-lg-4 ml-auto">
-                <h2 class="footer-heading mb-4">Navigation</h2>
+                <h2 class="footer-heading mb-4">Social Media: </h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="https://instagram.com/vendorcrest_digital"><span class="icon-instagram"></span>  Instagram</a></li>
+                  <li><a href="https://facebook.com/vendorcrest1"><span class="icon-facebook"></span>  Facebook</a></li>
+                  <li><a href="https://twitter.com/vendorcrest"><span class="icon-twitter"></span>  Twitter</a></li>
+                  <li><a href="https://linkedin.com/in/vendorcrest-digital-148583210"><span class="icon-linkedin"></span>  LinkedIn</a></li>
+                  <li><a href="https://wa.me/+2348112347977?text=**from%20vendorcrest.com"><span class="icon-whatsapp"></span>  Whatsapp</a></li>
                 </ul>
               </div>
               <div class="col-lg-4">
                 <h2 class="footer-heading mb-4">Navigation</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="index.php">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
                   <li><a href="#">Terms of Service</a></li>
                   <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
                 </ul>
                 
               </div>
