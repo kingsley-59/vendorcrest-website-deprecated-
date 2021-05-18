@@ -99,7 +99,13 @@
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-5 mt-5 pt-5">
               <h1 class="mb-3">About Us</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+              <p>              Your Business At It's Crest
+Nigeria is as we know is Africa's largest economy, it comprises millions of small and medium scale enterprises. Inherent in this group is that most of them do not know how to use the internet to make more money.
+As the internet popularity increases each passing day the more the need for them to know how to use it to their advantage.
+Fear of rejection and failure seems like a problem, to battle this obstacle one must know that global digitalization is inevitable. We know it's a big task to get the service or product to it's prime on the net, that's why we are offering to help.
+VendorCrest is a digital marketing agency that is filled with young, passionate and talented professionals. We want to help you get there, let's do it together.
+Visit us today at (website) and get it crested.
+</p>
               <!-- <p><a href="#" class="btn btn-primary">Learn More</a></p> -->
             </div>
           </div>

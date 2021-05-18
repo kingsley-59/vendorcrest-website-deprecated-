@@ -511,7 +511,7 @@ function get_description($section){
 
     
     
-    <div class="site-section bg-light">
+    <!-- <div class="site-section bg-light">
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-7 text-center mb-5">
@@ -558,9 +558,9 @@ function get_description($section){
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="site-section section-3" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg');">
+    <!-- <div class="site-section section-3" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg');">
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-7 text-center mb-5">
@@ -570,7 +570,7 @@ function get_description($section){
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
     <!-- <div class="site-section bg-white">

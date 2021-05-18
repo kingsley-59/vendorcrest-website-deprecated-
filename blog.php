@@ -33,7 +33,7 @@ include "admin/config/database.php";
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-    <?php include "oops.html"; ?>
+    
     <div class="site-wrap" id="home-section">
 
       <div class="site-mobile-menu site-navbar-target">
