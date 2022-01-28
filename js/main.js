@@ -88,11 +88,11 @@ jQuery(document).ready(function($) {
 	}; 
 	siteMenuClone();
 
-	var submitform = function () {
+	var submitquoteform = function () {
 		$("form#get_quote").submit((event) => {
 			event.preventDefault(event);
 			var first_name = $("input#f_name").val();
-			var last_name = $("input#l_name").val();
+			// var last_name = $("input#l_name").val();
 			var email_address = $("input#email_address").val();
 			var service = $("#service").val();
 			var phone_no = $("input#tel_no").val();
@@ -100,7 +100,7 @@ jQuery(document).ready(function($) {
 			var url = "admin/scripts/get_quote.php";
 			$.post(url, {
 				first_name: first_name,
-				last_name: last_name,
+				// last_name: last_name,
 				email_address: email_address,
 				service: service,
 				phone_no: phone_no,
@@ -113,42 +113,84 @@ jQuery(document).ready(function($) {
 			})
 		});
 	};
-	submitform();
+	submitquoteform();
+
+	function submit_newsletter(form, url, resp_element_id) {
+		var name, email, formValues, resp_element;
+		name = $(form).find('input[name="first_name"]').val();
+		email = $(form).find('input[name="email"]').val();
+		formValues = {
+			first_name: name,
+			newsletter_email: email,
+			auth_code: "4498a29GqUI41zBk0764"
+		};
+		resp_element = resp_element_id;
+		$.post(url, formValues, (response, status) => {
+			if (status == "success") {
+				$(form).trigger("reset");
+				resp_element.html("<div class=\"alert alert-success alert-dismissible\">" + response + "</div>");
+			} else {
+				resp_element.html("<div class=\"alert alert-error alert-dismissible\">" + "Form not submitted successfully" + "</div>")
+			}
+		});
+		
+	}
+
+	function submit_contactform(form, url, resp_element_id) {
+		var name, email, subject, message, formValues, resp_element;
+		name = $(form).find('input[name="first_name"]').val();
+		email = $(form).find('input[name="email"]').val();
+		// subject = $(form).find('input[name="contact_subject"]').val();
+		// message = $(form).find('input[name="contact_message"]').val();
+		subject = document.getElementById("ct_subject").value;
+		message = document.getElementById("ct_message").value;
+		formValues = {
+			first_name: name,
+			email: email,
+			contact_subject: subject,
+			contact_message: message
+		};
+		resp_element = resp_element_id;
+		$.post(url, formValues, (response, status) => {
+			if (status == "success") {
+				$(form).trigger("reset");
+				resp_element.html("<div class=\"alert alert-success alert-dismissible text-wrap\">" + response + "</div>");
+			} else {
+				alert("form error!")
+				resp_element.html("<div class=\"alert alert-error alert-dismissible\">" + "Form not submitted successfully" + "</div>");
+			}
+		})
+	}
+
+	var submitcontactform = function () {
+		$("#contact_form").submit((event) => {
+			event.preventDefault(event);
+			var form = $('#contact_form');
+			var url = "admin/scripts/contact-script.php";
+			var resp_element = $("#contact_form_resp");
+			resp_element.html("<div class=\"alert alert-success alert-dismissible\">Sending...</div>");
+			submit_contactform(form, url, resp_element);
+			if ($("#ct_nl_subscribe").is(":checked")) {
+				var subscribe_nl = true;
+				var nl_url = "admin/scripts/newsletter.php";
+				submit_newsletter(form, nl_url, resp_element);
+			} else {
+				var subscribe_nl = false;
+			}
+			if (subscribe_nl == false) {
+				//show pop-up asking to subscribe to newsletter
+			}
+		});
+	}
+	submitcontactform();
 	
 	var submitnewsletter = function () {
 		$("form#newsletter_sub").submit((event) => {
 			event.preventDefault(event);
-			var email = $("input#nl_email").val();
-			var firstname = $("input#nl_firstname").val();
+			var form = "form#newsletter_sub";
 			var url = "admin/scripts/newsletter.php";
-			$.post(url, {
-				first_name: firstname,
-				newsletter_email: email,
-				auth_code: "4498a29GqUI41zBk0764"
-			}, (response, status) => {
-				if (status == "success") {
-					var div = document.createElement("div");
-					var att = document.createAttribute("id");
-					att.value = "res_alert";
-					div.setAttributeNode(att);
-					//$("div#res_alert").addClass("alert");
-					$("div#resp_div").html(div);
-					var close_btn = "<a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>";
-					$("form#newsletter_sub input[type!='submit']").val("");
-					if (response.includes("Success!")) {
-						$("div#res_alert").removeClass("alert-danger");
-						$("div#res_alert").addClass("alert alert-success alert-dismissible");
-						$("div#res_alert").html(close_btn + response);
-					} else if (response.includes("Error!")) {
-						$("div#res_alert").removeClass("alert-success");
-						$("div#res_alert").addClass("alert alert-danger alert-dismissible");
-						$("div#res_alert").html(close_btn + response);
-					} else {
-						$("div#res_alert").addClass("alert alert-info alert-dismissible");
-						$("div#res_alert").html(close_btn + response);
-					}
-				}
-			})
+			var resp_element = $("div#nl_resp");
+			submit_newsletter(form, url, resp_element);
 		});
 	};
 	submitnewsletter();

@@ -39,79 +39,111 @@
 
 
 
-      <header class="site-navbar site-navbar-target" role="banner">
-
-        <div class="container mb-3">
-          <div class="d-flex align-items-center">
-            <div class="site-logo mr-auto">
-              <a href="index.php">VendorCrest<span class="text-primary">.</span></a>
-            </div>
-            <div class="site-quick-contact d-none d-lg-flex ml-auto ">
-              <div class="d-flex site-info align-items-center mr-5">
-                <span class="block-icon mr-3"><span class="icon-map-marker"></span></span>
-                <span>Enugu, <br> Nigeria</span>
-              </div>
-              <div class="d-flex site-info align-items-center">
-                <span class="block-icon mr-3"><span class="icon-clock-o"></span></span>
-                <span>Open - 24hrs </span>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-
-
-        <div class="container">
-          <div class="menu-wrap d-flex align-items-center">
-            <span class="d-inline-block d-lg-none"><a href="#" class="text-black site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-black"></span></a></span>
-
-              
-
-              <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
-                <ul class="site-menu main-menu js-clone-nav mr-auto ">
-                  <li><a href="index.php" class="nav-link">Home</a></li>
-                  <li><a href="services.php" class="nav-link">Services</a></li>
-                  <!-- <li><a href="projects.html" class="nav-link">Projects</a></li> -->
-                  <li class="active"><a href="about.php" class="nav-link">About</a></li>
-                  <li><a href="blog.php" class="nav-link">Blog</a></li>
-                  <li><a href="contact.php" class="nav-link">Contact</a></li>
-                </ul>
-              </nav>
-
-              <div class="top-social ml-auto">
-                <a href="https://instagram.com/vendorcrest_digital"><span class="icon-instagram"></span></a>
-                <a href="https://facebook.com/vendorcrest1"><span class="icon-facebook"></span></a>
-                <a href="https://twitter.com/vendorcrest"><span class="icon-twitter"></span></a>
-                <a href="https://linkedin.com/in/vendorcrest-digital-148583210"><span class="icon-linkedin"></span></a>
-              </div>
-          </div>
-        </div>
-
-       
-
-      </header>
-
+      <?php include("./partials/Header.php") ?>
     
 
     <div class="ftco-blocks-cover-1">
       <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')">
-        <div class="container">
-          <div class="row align-items-center justify-content-center text-center">
+        <div class="container" style="padding-bottom: 10px;margin-bottom: 0;">
+          <div class="row align-items-center justify-content-center text-center" style="padding-top:20px; padding-bottom: 20px;">
             <div class="col-md-5 mt-5 pt-5">
               <h1 class="mb-3">About Us</h1>
-              <p>              Your Business At It's Crest
-Nigeria is as we know is Africa's largest economy, it comprises millions of small and medium scale enterprises. Inherent in this group is that most of them do not know how to use the internet to make more money.
-As the internet popularity increases each passing day the more the need for them to know how to use it to their advantage.
-Fear of rejection and failure seems like a problem, to battle this obstacle one must know that global digitalization is inevitable. We know it's a big task to get the service or product to it's prime on the net, that's why we are offering to help.
-VendorCrest is a digital marketing agency that is filled with young, passionate and talented professionals. We want to help you get there, let's do it together.
-Visit us today at (website) and get it crested.
-</p>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p> -->
+              <p></p>
               <!-- <p><a href="#" class="btn btn-primary">Learn More</a></p> -->
             </div>
           </div>
+          <div class="row align-items-start justify-content-center text-justify" style="padding-top: 35px;">
+            <div class="col-sm-4 mb-2">
+              <h3 class="mb-2">Your Business At It's Crest</h3>
+              <p>Nigeria is as we know is Africa's largest economy, it comprises millions of small and medium scale enterprises. Inherent in this group is that most of them do not know how to use the internet to make more money.
+As the internet popularity increases each passing day the more the need for them to know how to use it to their advantage.
+Fear of rejection and failure seems like a problem, to battle this obstacle one must know that global digitalization is inevitable. We know it's a big task to get the service or product to it's prime on the net, that's why we are offering to help.
+VendorCrest is a digital marketing agency that is filled with young, passionate and talented professionals. We want to help you get there, let's do it together.
+</p>
+            </div>
+            <div class="col-sm-4 mb-2">
+              <h3 class="mb-2">Optimizing Your Site</h3>
+              <p>Do you have a website?
+Do you want to have more site visits?
+Have you heard of SEO and SEM (Search engine optimization and Search engine marketing).
+Yes it sounds unfamiliar but with this art you can get more website user, it can also increase your visibility in a search engines (google, bing e.t.c.).
+We offer the above services and we know we have what it takes to get the job done.
+Come and let's tell you how to use keywords to get millions of customers.
+Let's do the cresting together!
+</p>
+            </div>
+            <div class="col-sm-4 mb-2">
+              <h3 class="mb-2">Internet Marketing</h3>
+              <p>The normal market we have today has run out value. A new market is rocking the world "the digital or internet market".
+Today the success of any business is determined by how connected it is to it's customers on the web.
+Nearly half of the world population are on the internet, these are normal people with problems that needs to be solved. Who knows that your product, service or idea might be their solution.
+We can help you reach out to them, we can get your product or service publicized all over the web. It all ways down to your decision today.
+Let us help you, let's take you to your crest.
+</p>
+            </div>
+          </div>
+          <div class="container-fluid">
+        <div class="row justify-content-center text-center">
+          <div class="col-7 text-center mb-5">
+            <h2 class="text-dark section-heading primary-color-icon text-center">Get in touch<?php //echo get_title('Contact Us'); ?></h2>
+            <p class="lead text-dark mb-5">Send us a message let's discuss your idea as you reach for your crest!<?php //echo get_description('Contact Us'); ?></p>
+            <!-- <p><a href="#" id="myBtn" class="btn btn-primary">Contact Us Now</a></p> -->
+            <p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Contact Us</button></p>
+            <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+          <h4 class="modal-title">Let's connect!</h4>
+        </div>
+        <div class="modal-body">
+        <div class="container">
+        <form id="contact_form">
+            <div class="form-group">
+                <label for="name">Name: </label>
+                <input type="text" name="contact_name" id="" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="email" name="contact_email" id="" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject: </label>
+                <input type="text" name="contact_subject" id="" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message: </label>
+                <textarea name="contact_message" id="" cols="30" rows="5" class="form-control" required></textarea>
+            </div>
+            <div class="checkbox">
+                <label for="newsletter"><input type="checkbox" name="nl_sub" id=""> Subscribe for our newsletter</label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-success" id="ctform_submit">
+            </div>
+        </form>
+    </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
         </div>
       </div>
     </div>
+
+    
+      
 
 
     <!-- <div class="site-section bg-light">
@@ -180,7 +212,7 @@ Visit us today at (website) and get it crested.
     </div> -->
 
 
-    <div class="site-section bg-light">
+    <!-- <div class="site-section bg-light">
       <div class="container">
         <div class="row justify-content-center text-center mb-5 section-2-title">
           <div class="col-md-6">
@@ -276,7 +308,7 @@ Visit us today at (website) and get it crested.
 
         </div>
       </div>
-    </div>
+    </div> -->
 
 
     <!-- <div class="site-section section-3" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_2.jpg');">
@@ -325,63 +357,7 @@ Visit us today at (website) and get it crested.
       </div>
     </div> -->
 
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <h2 class="footer-heading mb-3">About Us</h2>
-                <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-
-                <h2 class="footer-heading mb-4">Newsletter</h2>
-                <form action="#" class="d-flex" class="subscribe">
-                  <input type="text" class="form-control mr-3" placeholder="Email">
-                  <input type="submit" value="Send" class="btn btn-primary">
-                </form>
-          </div>
-          <div class="col-lg-8 ml-auto">
-            <div class="row">
-              <div class="col-lg-4 ml-auto">
-                <h2 class="footer-heading mb-4">Social Media: </h2>
-                <ul class="list-unstyled">
-                  <li><a href="https://instagram.com/vendorcrest_digital"><span class="icon-instagram"></span>  Instagram</a></li>
-                  <li><a href="https://facebook.com/vendorcrest1"><span class="icon-facebook"></span>  Facebook</a></li>
-                  <li><a href="https://twitter.com/vendorcrest"><span class="icon-twitter"></span>  Twitter</a></li>
-                  <li><a href="https://linkedin.com/in/vendorcrest-digital-148583210"><span class="icon-linkedin"></span>  LinkedIn</a></li>
-                  <li><a href="https://wa.me/+2348112347977?text=**from%20vendorcrest.com"><span class="icon-whatsapp"></span>  Whatsapp</a></li>
-                </ul>
-              </div>
-              <div class="col-lg-4">
-                <h2 class="footer-heading mb-4">Navigation</h2>
-                <ul class="list-unstyled">
-                  <li><a href="index.php">Home</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                </ul>
-                
-              </div>
-
-              
-              
-            </div>
-          </div>
-        </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-              <p>
-             
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="https://vendorCrest.com" target="_blank" > VendorCrest</a>
-             
-            </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </footer>
+    <?php include("./partials/Footer.php"); ?>
 
     </div>
 
