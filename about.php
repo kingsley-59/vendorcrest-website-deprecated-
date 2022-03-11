@@ -53,34 +53,27 @@
               <!-- <p><a href="#" class="btn btn-primary">Learn More</a></p> -->
             </div>
           </div>
-          <div class="row align-items-start justify-content-center text-justify" style="padding-top: 35px;">
-            <div class="col-sm-4 mb-2">
-              <h3 class="mb-2">Your Business At It's Crest</h3>
-              <p>Nigeria is as we know is Africa's largest economy, it comprises millions of small and medium scale enterprises. Inherent in this group is that most of them do not know how to use the internet to make more money.
-As the internet popularity increases each passing day the more the need for them to know how to use it to their advantage.
-Fear of rejection and failure seems like a problem, to battle this obstacle one must know that global digitalization is inevitable. We know it's a big task to get the service or product to it's prime on the net, that's why we are offering to help.
-VendorCrest is a digital marketing agency that is filled with young, passionate and talented professionals. We want to help you get there, let's do it together.
-</p>
-            </div>
-            <div class="col-sm-4 mb-2">
-              <h3 class="mb-2">Optimizing Your Site</h3>
-              <p>Do you have a website?
-Do you want to have more site visits?
-Have you heard of SEO and SEM (Search engine optimization and Search engine marketing).
-Yes it sounds unfamiliar but with this art you can get more website user, it can also increase your visibility in a search engines (google, bing e.t.c.).
-We offer the above services and we know we have what it takes to get the job done.
-Come and let's tell you how to use keywords to get millions of customers.
-Let's do the cresting together!
-</p>
-            </div>
-            <div class="col-sm-4 mb-2">
-              <h3 class="mb-2">Internet Marketing</h3>
-              <p>The normal market we have today has run out value. A new market is rocking the world "the digital or internet market".
-Today the success of any business is determined by how connected it is to it's customers on the web.
-Nearly half of the world population are on the internet, these are normal people with problems that needs to be solved. Who knows that your product, service or idea might be their solution.
-We can help you reach out to them, we can get your product or service publicized all over the web. It all ways down to your decision today.
-Let us help you, let's take you to your crest.
-</p>
+          <div class="row align-items-start justify-content-center text-justify" style="padding-top: 35px;background-color: #ffffff0f;color: #444">
+            <div class="col-xs-12 col-sm-9 col-md-6 m-3 p-3">
+              <h3>Who We Are</h3>
+              <p>
+                Vendorcrest is your best choice. We are a team of talented young creatives who have had a fair share of what 
+                it means to be lost in the noise of being digitally visible. As professionals, we know what it means to be on 
+                the other side of being visible and have over time learnt how to not only help ourselves out, but also help 
+                people like you who are interested in bringing their brands on to the digital space.
+                Our services have been packaged to help you see the growth you desire even as we handle the most crucial 
+                aspect of your business. We are your support system in the online world. Our aim is to see that you succeed 
+                in your endeavors as a business owner, and we achieve this with the collective effort of every member of our 
+                team. Just so you know, we care enough to guarantee a trust on every service we offer because your 
+                satisfaction fuels ours.
+              </p>
+              <p>
+                Vendorcrest helps you actualize your full potential as a business owner using the digital space as a medium. We help you identify and complete the missing piece to your business growth online by leveraging a bunch of tools at our disposal – including well-tailored strategies that help us monitor the right KPIs (key Performance Indicators) that flips your online visibility through the roof.
+                We take that overwhelming feeling that comes with not being able to identify your business’ online needs, or not knowing exactly what to do to get the already identified needs fulfilled off you. We know just what to do to get you smiling again; this we do with all sense of professionalism.
+                We focus on providing digital solutions ranging from web development, digital marketing, branding and designs, creative contents, SEO and social media management
+                What’s more? We believe in the uniqueness that comes with your business, so we prioritize taking your business personal, and help you build a solid relationship with your existing customers. This way, we create a two-way trust – between you and your customers, and between you and us.
+                The world is moving digital, and we are your best choice for leveraging this and funneling its perks to lead your business to its crest.
+              </p>
             </div>
           </div>
           <div class="container-fluid">

@@ -1,5 +1,7 @@
 <?php
 
+require "../../vendor/autoload.php";
+
 require "../../includes/Exception.php";
 require "../../includes/PHPMailer.php";
 require "../../includes/SMTP.php";
@@ -9,6 +11,8 @@ require "../../includes/SMTP.php";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
+
+use \Mailjet\Resources;
 
 
 function sendMail($parameters){
@@ -73,6 +77,48 @@ function sendMail($parameters){
       $sendMailError =  "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
       return false;
     }
+}
+
+function sendMailViaApi($parameters) {
+
+  //define variables from the array passed as the function argument
+  $firstname = $parameters["firstname"];
+  $lastname = $parameters["lastname"];
+  $email_address = $parameters["email_address"];
+  $mail_subject = $parameters["mail_subject"];
+  $htmlMessage = $parameters["html_message"];
+  $altMessage = $parameters["alt_message"];
+  
+  $mj = new \Mailjet\Client('a5d4422bb9800ced19b80e844361ca93','3bf741f5ead841f4f55b47184e29273d',true,['version' => 'v3.1']);
+  $body = [
+    'Messages' => [
+      [
+        'From' => [
+          'Email' => "divine10646@gmail.com",
+          'Name' => "Vee from Vendorcrest"
+        ],
+        'To' => [
+          [
+            'Email' => $email_address,
+            'Name' => $firstname
+          ]
+        ],
+        'Subject' => $mail_subject,
+        'TextPart' => $altMessage,
+        //'HTMLPart' => "<h3>Dear passenger 1, welcome to <a href='https://www.mailjet.com/'>Mailjet</a>!</h3><br />May the delivery force be with you!",
+        'HTMLPart' => $htmlMessage,
+        'CustomID' => "AppGettingStartedTest"
+      ]
+    ]
+  ];
+
+  $response = $mj->post(Resources::$Email, ['body' => $body]);
+  // $response->success() && var_dump($response->getData());
+  $_res = $response->success();
+  $_data = (array) $response->getData();
+  $status = $_data["Messages"][0]["Status"];
+  
+  return $status;
 }
 
 //Handle database and mail errors

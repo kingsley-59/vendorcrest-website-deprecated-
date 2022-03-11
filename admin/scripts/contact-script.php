@@ -45,10 +45,12 @@ if ($input_error == 0){
     $result = $conn->query($insert_sql);
     if ($result){
         include "sendmail.php";
-        sendMail($parameters);
+        $response = sendMailViaApi($parameters);
+        //print_r($response->getData());
 
-        if(sendMail($parameters)){
+        if($response == "success"){
             echo "Thanks for contacting us. We reply within 24hrs via email.\n";
+            
             $update_sql = "UPDATE contact_form_data SET status=true where email='$contact_email' ";
             $result = mysqli_query($conn, $update_sql);
             if(!$result){

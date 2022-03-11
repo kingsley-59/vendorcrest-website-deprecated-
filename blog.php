@@ -80,7 +80,7 @@ include "admin/config/database.php";
           <?php while($i <= 6): ?>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
-              <a href="single.html">
+              <a href="single.php">
                 <img src="images/img_1.jpg" alt="Image"
                  class="img-fluid">
               </a>
@@ -96,7 +96,7 @@ include "admin/config/database.php";
           <?php endwhile; ?>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
-              <a href="single.html">
+              <a href="single.php">
                 <img src="images/img_2.jpg" alt="Image"
                  class="img-fluid">
               </a>
@@ -111,7 +111,7 @@ include "admin/config/database.php";
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
-              <a href="single.html">
+              <a href="single.php">
                 <img src="images/img_3.jpg" alt="Image"
                  class="img-fluid">
               </a>
@@ -127,7 +127,7 @@ include "admin/config/database.php";
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
-              <a href="single.html">
+              <a href="single.php">
                 <img src="images/img_1.jpg" alt="Image"
                  class="img-fluid">
               </a>
@@ -141,7 +141,7 @@ include "admin/config/database.php";
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
-              <a href="single.html">
+              <a href="single.php">
                 <img src="images/img_2.jpg" alt="Image"
                  class="img-fluid">
               </a>
@@ -156,7 +156,7 @@ include "admin/config/database.php";
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
-              <a href="single.html">
+              <a href="single.php">
                 <img src="images/img_3.jpg" alt="Image"
                  class="img-fluid">
               </a>

@@ -3,7 +3,7 @@
         <div class="row">
           <div class="col-lg-4">
             <h2 class="footer-heading mb-3">About Us</h2>
-                <p class="mb-5">Are you an SME, Entrepreneur or Business Owner? <span style="color: #00adbf;">VendorCrest</span> is here for you! </p>
+                <p class="mb-5">You are here because you are a business owner, and you know we are the best when it comes to leveraging the digital space to lead your business to its crest. We are here for you.</p>
 
                 <h2 class="footer-heading mb-3">Newsletter</h2>
                 <div id="nl_resp"></div>

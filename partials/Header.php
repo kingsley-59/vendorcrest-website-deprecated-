@@ -2,7 +2,7 @@
 
 <header class="site-navbar site-navbar-target" role="banner">
 
-<div class="container mb-3">
+<div class="container mb-2">
   <div class="d-flex align-items-center">
     <div class="site-logo mr-auto">
       <a href="index.php"> <img src="images/vc-logo.png" alt="logo" width="48" height="48"> VendorCrest<span class="text-primary">.</span></a>
@@ -42,7 +42,7 @@
       <div class="top-social ml-auto">
         <a href="https://instagram.com/vendorcrestdigital_"><span class="icon-instagram"></span></a>
         <a href="https://facebook.com/vendorcrest1"><span class="icon-facebook"></span></a>
-        <a href="https://twitter.com/vendorcrest"><span class="icon-twitter"></span></a>
+        <!-- <a href="https://twitter.com/vendorcrest"><span class="icon-twitter"></span></a> -->
         <a href="https://linkedin.com/in/vendorcrest-digital-148583210"><span class="icon-linkedin"></span></a>
       </div>
   </div>
